@@ -1,0 +1,45 @@
+# 项目相关配置
+eureka-server:
+  # 名称
+  name: Eureka注册中心-Single模式
+  # 版本
+  version: 1.0.0
+  # 作者
+  author: GeekTech
+  # 单位
+  unit: GeekTech
+
+spring:
+  # 应用配置
+  application:
+    # 应用名称
+    name: eureka-server
+  # 安全配置
+  security:
+    basic:
+      # 支持Http协议
+      enabled: true
+    user:
+      # 用户名
+      name: admin
+      # 密码
+      password: geektech
+
+# 日志配置
+logging:
+  level:
+    com.geektech: warn
+    com.springframework: warn
+
+# 服务配置
+server:
+  # 端口
+  port: 8761
+
+# Eureka Server配置
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://admin:geektech@localhost:8761/eureka
