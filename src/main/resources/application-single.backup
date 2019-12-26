@@ -42,4 +42,4 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://admin:geektech@eureka:8761/eureka
+      defaultZone: http://admin:geektech@eureka-server:8761/eureka
